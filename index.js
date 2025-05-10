@@ -14,3 +14,12 @@ app.get("/get-req", async function (req, res) {
     })
 
 })
+
+app.get("/users",async function(req,res){
+	console.log("Get in to the users route");
+	res.status(200).json
+    ({
+    msg:"request hit sucessfully"
+    })
+})
+
